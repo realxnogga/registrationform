@@ -1,0 +1,196 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    /* --light-violet: #60a3f0; */
+    --light-violet: #dbddf0;
+    --violet: #5960BF; 
+    --dark-violet: #181935; 
+    --white: #ffffff;
+    --black: #000000;
+    --shadow: rgba(0, 0, 0, 0.9);
+    --orange: #E96F1D;
+    --light-red: #d6a8a4;
+    --light-green: #abd3b6;
+}
+
+body{
+    background-color: var(--white);
+    background-position: center;
+    background-size: cover;
+    height: 100%; width: 100vw;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#parent{
+    overflow: scroll;   
+    width: 100%;
+    height: 98vh;
+}
+#con-addAndSearch{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#wrapperForSearchFieldAndIcon{
+    height: 30px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: row;
+}
+#wrapperSearchIcon{
+    height: 30px; 
+    width: 30px;
+    background-color: var(--violet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#searchField{
+    height: 30px; width: 100%;
+    border: 1px solid var(--violet);
+    padding: 0px 10px 0px 10px;
+    border-left: none; 
+    outline: none;
+}
+
+#searchBy{
+    height: 30px; width: fit-content;
+    border: none;
+    outline: none;
+    background-color:  var(--violet);
+    color: var(--white);
+}
+
+
+table{
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+td:first-child{
+    text-align: center;
+}
+
+th {
+    
+    width: 100px;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    background-color: var(--violet);
+    color: white;
+}
+
+td{padding: 5px;}
+tr:hover{
+    background-color: var(--light-violet);
+} 
+
+#editButton{
+    height: 25px;
+    width: 85px;
+    background-color: var(--light-green);
+    border: none;
+}
+#deleteButton{
+    height: 25px;
+    width: 85px;
+    background-color: var(--light-red);
+    border: none;
+}
+
+#viewrecord-in-archiveButton{
+    height: 30px;
+    width: 120px;
+    background-color: var(--violet);
+    border: none;
+    color: white;
+}
+
+#archiveButton{
+    height: 20px;
+    width: 110px;
+    background-color: var(--light-green);
+    border: none;
+    color: white;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    height: 30px;
+    width: 85px;
+    background-color: var(--violet);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--violet);
+    color:  var(--white);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: var(--white);
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: var(--light-violet); color: var(--black);}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: var(--light-violet);
+  }
+
+  
+  @media only screen and (max-width: 580px) {
+    #wrapperForSearchFieldAndIcon{
+      width: 100%;
+    }
+
+    #con-addAndSearch{
+    
+        display: flex;
+        row-gap: 40px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        
+    }
+
+  }
+
+

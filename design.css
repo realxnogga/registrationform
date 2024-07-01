@@ -1,0 +1,202 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    /* --light-violet: #60a3f0; */
+    --light-violet: #afb3f5;
+    --violet: #5960BF; 
+    --dark-violet: #181935; 
+    --white: #ffffff;
+    --black: #000000;
+    --shadow: rgba(0, 0, 0, 0.9);
+    --orange: #E96F1D;
+    --light-red: var(#D07B74);
+    --light-green: var(#88B595);
+
+}
+
+body{
+    background-color: var(--white);
+    background-position: center;
+    background-size: cover;
+    height: 100%; width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#mainCon{
+    width : clamp(0px, 90%, 700px); 
+}
+
+main{ 
+    padding: 30px;
+    /* border-radius: 5px; */
+    background-color: var(--light-violet);
+    box-shadow: 5px 10px 10px var(--shadow);
+    margin-bottom: 30px;
+}
+
+#heading #img-txt{
+    font-size:  clamp(0.6rem, 3vw, 1rem);
+}
+
+#heading{
+    text-align: center;   
+}
+#heading img{ 
+    height: 40px;
+    width: 30px;
+    filter: invert(49%) sepia(40%) saturate(1296%) hue-rotate(345deg) brightness(103%) contrast(97%);
+}
+
+#heading #img-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#line{
+    margin-top: 10px;
+    height: 3px;
+    width: 100%;
+    background-color: var(--orange);
+}
+
+#wrapper-field{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#wrapper-icon{
+    height: 35px; width: 35px;
+    background-color: var(--violet);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper-icon img{
+    height: 25px; width: 25px;
+}
+/* for fname and lname */
+#wrapperUsername div #wrapper-for-username-field{
+    width: 100%;
+    display: flex;
+    flex-direction: row;  
+}
+#wrapperUsername div #wrapper-image-for-username{
+    height: 35px; width: 35px;
+    background-color: var(--violet);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wrapperUsername div #wrapper-image-for-username img{
+    height: 25px; width: 25px; 
+}
+
+
+#wrapperUsername{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#wrapperUsername >*{
+    width: 48%;
+}
+hr{
+    border: none;
+    height: 2px;
+    background-color: var(--violet);
+}
+#wrapper-genderAndInterest{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#wrapper-genderAndInterest div{
+    width: 48%;
+    background-color: #c8c8f1;
+    padding: 10px;
+}
+input[type=radio], input[type=checkbox]{
+    margin-top: 8px;
+}
+
+form .con{
+    margin: 50px 0px 0px 0px;
+}
+
+input[type=text], input[type=email], select, textarea{
+    height: 35px;
+    width: 100%;
+    border: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    outline: none;
+}
+
+/* buttons */
+.button{
+    height: 30px;
+    width: 120px;
+    background-color: var(--violet);
+    border: none;
+    color: var(--white);
+    margin: 20px 0px 20px 0px;
+}
+
+#submitButton{
+    background-color: var(--orange); 
+}   
+
+/* responsiveness */
+@media only screen and (max-width: 1000px) {
+    #wrapperUsername{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    #wrapperUsername div{
+        width: 100%;  
+    }
+    #wrapper-genderAndInterest{
+        flex-direction: column;
+        width: 100%;
+        row-gap: 10px;
+    }
+    #wrapper-genderAndInterest div{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    main{
+        padding: 10px;
+    }
+
+    #wrapperUsername{
+        gap: 25px;
+    }
+
+    form .con{
+        margin-top: 25px;
+    }
+
+  }
+
+
+/* ergergerw */
+#wrapper-genderAndInterest div #ot{
+    width: 100%;
+}
